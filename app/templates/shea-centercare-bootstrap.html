@@ -1,0 +1,179 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+
+    <!-- Le styles -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/css/docs.css" rel="stylesheet">
+    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://twitter.github.com/bootstrap/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
+      <script src="scripts/vendor/modernizr.min.js"></script>
+  </head>
+
+      <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+      <![endif]-->
+
+    <!--  Comments from Adam. Can Fold/Unfold  -->
+
+    <!-- 
+      Hey Babes, I fixed the javascript so the tabs do work now. It just wasn't calling
+      the files properly because we had copied over the yeoman links to the bootstrap.js files
+      with the calls from the http://twitter examples site urls.
+
+      I also set the tabbing to 2 spaces and fixed the file to follow
+      standard HTML tabbing, this allows the code-folding in sublime to
+      properly nest everything, so if you fold the body you just see 
+      body open and body close tags, same with container, navbar, etc.
+      so you can easily see if things are contained properly.
+
+      I did not change any actual code.
+
+      I did play around with the container yeoman puts over the entire
+      page to help with responsive styling. To get rid of it just remove the
+      top div class= container and the last closing div. But first, check out how the page 
+      (specifically the responsive one) looks with the container with the margin-top 50px,
+      also how it looks with just a regular container by removing the style= 50px, 
+      and if you want to see the tabs flush left, how you originally had,
+      then just remove the container opening and closing divs. 
+
+      P.S: You can fold up this entire comment :)  --> 
+
+
+    <!-- Add your site or application content here -->
+
+    
+  <body>
+
+    <div class="container" style="margin-top:50px">  <!--remove if want. try with no margin-top -->
+
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                  <li class="active"><a class="brand" href="#">centercare</a></li>
+                  <li><a href="#user-settings">settings(icon)</a></li>
+                  <li><a href="#user-messages">messages(icon)</a></li>
+                  <li><a href="#user-logout">logout(icon)</a></li>
+              </ul>
+            </div>  <!--.nav-collapse -->
+          </div>  <!-- nav container (for responsive) -->
+        </div>  <!-- navbar-inner -->
+      </div>  <!-- end navbar-fixed-top -->
+
+      <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+          <li><a href="#rooms"     data-toggle="tab">rooms</a></li>
+          <li><a href="#families"  data-toggle="tab">families</a></li>
+          <li><a href="#sessions"  data-toggle="tab">sessions</a></li>
+          <li><a href="#finances"  data-toggle="tab">finances</a></li>
+          <li><a href="#site-care" data-toggle="tab">site care</a></li>
+        </ul>
+        
+        <div class="tab-content">
+
+          <div class="tab-pane" id="rooms">
+            <!--/room tab content-->
+            <p>Room content</p>
+          </div>
+
+          <div class="tab-pane" id="families">
+            <!--/family tab content-->
+            <p>Family content</p>
+          </div>
+
+          <div class="tab-pane" id="sessions">
+            <!--/sessions tab content-->
+            <p>Session content</p>
+          </div>
+
+          <div class="tab-pane" id="finances">
+            <!--/finances tab content-->
+          </div>
+
+          <div class="tab-pane" id="site-care">
+            <!--/home care tab content-->
+          </div>
+      
+        </div> <!-- end tab-content -->
+
+      </div> <!-- end tabbable left section -->
+    
+    </div> <!-- end entire page container. Remove if want. -->
+
+
+   
+
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <script>
+        window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')
+      </script>
+      
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.http://twitter.com/widgets.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-affix.js"></script>
+
+    <script src="http://twitter.github.com/bootstrap/assets/js/holder/holder.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="http://twitter.github.com/bootstrap/assets/js/application.js"></script>
+
+  </body>
+  
+</html>
+
+
+
+                                    
