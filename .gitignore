@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+node_modules
+dist
+.tmp
+.sass-cache
+app/components
+>>>>>>> b70b1a8df282934771647b37223d961173fe5bc3
 lib-cov
 *.seed
 *.log
@@ -10,8 +18,11 @@ pids
 logs
 results
 npm-debug.log
+<<<<<<< HEAD
 node_modules
 dist
 .tmp
 .sass-cache
 app/components
+=======
+>>>>>>> b70b1a8df282934771647b37223d961173fe5bc3
